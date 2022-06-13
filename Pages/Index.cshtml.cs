@@ -5,12 +5,7 @@ namespace Weeks_06.Pages
 {
     public class IndexModel : PageModel
     {
-        private readonly ILogger<IndexModel> _logger;
-
-        public IndexModel(ILogger<IndexModel> logger)
-        {
-            _logger = logger;
-        }
+        //Data Source =.; Initial Catalog = cegep; Integrated Security = True
 
         public void OnGet()
         {
