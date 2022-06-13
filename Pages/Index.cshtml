@@ -4,4 +4,24 @@
     ViewData["Title"] = "Home page";
 }
 
-
+<table class="table table-dark">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Nom Complet</th>
+            <th>Moyenne</th>
+            <th>Programme</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var e in @Model.etudiants)
+{
+    <tr>
+        <td>@e.Id</td>
+        <td>@e.Prenom @e.Nom</td>
+        <td>@e.Moyenne</td>
+        <td>@e.Programme</td>
+    </tr>
+}
+    </tbody>
+</table>
