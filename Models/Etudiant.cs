@@ -4,7 +4,7 @@ namespace Weeks_06.Pages
 {
     public class Etudiant
     {
-        [Required]
+        [Required(ErrorMessage = "The name is required")]
         public int Id { get; set; }
         [Required]
         public string Prenom { get; set; }

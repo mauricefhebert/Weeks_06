@@ -4,18 +4,28 @@
     ViewData["Title"] = "Create";
 }
 
-<form method="post">
+<form class="form" method="post">
+    <div class="form-group">
     <label for="Prenom">Prenom</label>
-    <input for="@Model.Prenom"/>
-    <span asp-validation-for="@Model.Prenom"></span>
+    <input class="form-control" for="@Model.etudiants.Prenom"/>
+    <span asp-validation-for="@Model.etudiants.Prenom"></span>
+    </div>
+    <div class="form-group">
     <label asp="Nom">Nom</label>
-    <input for-for="@Model.Nom"/>
-    <span asp-validation-for="@Model.Nom"></span>
+    <input class="form-control" for-for="@Model.etudiants.Nom"/>
+    <span asp-validation-for="@Model.etudiants.Nom"></span>
+    </div>
+    <div class="form-group">
     <label for="Moyenne">Moyenne</label>
-    <input for="@Model.Moyenne"/>
-    <span asp-validation-for="@Model.Moyenne"></span>
-    <select>
+    <input class="form-control" for="@Model.etudiants.Moyenne"/>
+    <span asp-validation-for="@Model.etudiants.Moyenne"></span>
+    </div>
+    <div class="form-group">
+    <label for="Programme">Programme</label>
+    <select class="form-control">
         <option value="" selected>Veuillez faire un choix</option>
     </select>
+    <span asp-validation-for="@Model.etudiants.Programme"></span>
+    </div>
     <button class="btn btn-primary">Submit</button>
 </form>
