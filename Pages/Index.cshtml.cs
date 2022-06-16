@@ -19,7 +19,7 @@ namespace Weeks_06.Pages
                 //Open the connection
                 cn.Open();
                 //Create query
-                string query = "SELECT * FROM Client";
+                string query = "SELECT * FROM etudiant";
                 //Create the command
                 using (var cmd = new SqlCommand(query, cn))
                 {

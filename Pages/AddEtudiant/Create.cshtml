@@ -1,0 +1,21 @@
+@page
+@model Weeks_06.Pages.AddEtudiant.Create
+@{
+    ViewData["Title"] = "Create";
+}
+
+<form method="post">
+    <label for="Prenom">Prenom</label>
+    <input for="@Model.Prenom"/>
+    <span asp-validation-for="@Model.Prenom"></span>
+    <label asp="Nom">Nom</label>
+    <input for-for="@Model.Nom"/>
+    <span asp-validation-for="@Model.Nom"></span>
+    <label for="Moyenne">Moyenne</label>
+    <input for="@Model.Moyenne"/>
+    <span asp-validation-for="@Model.Moyenne"></span>
+    <select>
+        <option value="" selected>Veuillez faire un choix</option>
+    </select>
+    <button class="btn btn-primary">Submit</button>
+</form>
