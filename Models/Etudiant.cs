@@ -1,12 +1,13 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 
 namespace Weeks_06.Pages
 {
     public class Etudiant
     {
-        [Required(ErrorMessage = "The name is required")]
         public int Id { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Le Prenom est obligatoire")]
         public string Prenom { get; set; }
         [Required]
         public string Nom { get; set; }

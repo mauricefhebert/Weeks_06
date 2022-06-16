@@ -24,6 +24,7 @@ namespace Weeks_06.Pages.AddEtudiant
                 return Page();
             }
 
+
             return RedirectToPage("/Index");
         }
     }

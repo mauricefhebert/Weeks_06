@@ -9,10 +9,14 @@ html {
 }
 
 html {
-  position: relative;
   min-height: 100%;
+  position: relative;
 }
 
 body {
   margin-bottom: 60px;
+}
+
+span[class*="error"] {
+  color: red;
 }
