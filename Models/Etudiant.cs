@@ -9,11 +9,11 @@ namespace Weeks_06.Pages
         public int Id { get; set; }
         [Required(ErrorMessage = "Le Prenom est obligatoire")]
         public string Prenom { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Le Nom est obligatoire")]
         public string Nom { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Veuillez entrée une moyenne")]
         public int Moyenne { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Veuillez faire une selection")]
         public string Programme { get; set; }
     }
 }

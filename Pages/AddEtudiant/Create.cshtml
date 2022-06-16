@@ -6,26 +6,26 @@
 
 <form class="form" method="post">
     <div class="form-group">
-    <label asp-for="etudiants.Prenom">Prenom</label>
-    <input class="form-control" asp-for="etudiants.Prenom"/>
-    <span asp-validation-for="etudiants.Prenom"></span>
+        <label asp-for="etudiants.Prenom">Prenom</label>
+        <input class="form-control" asp-for="etudiants.Prenom"/>
+        <span asp-validation-for="etudiants.Prenom"></span>
     </div>
     <div class="form-group">
-    <label asp-for="etudiants.Nom">Nom</label>
-    <input class="form-control" asp-for="etudiants.Nom"/>
-    <span asp-validation-for="etudiants.Nom"></span>
+        <label asp-for="etudiants.Nom">Nom</label>
+        <input class="form-control" asp-for="etudiants.Nom"/>
+        <span asp-validation-for="etudiants.Nom"></span>
     </div>
     <div class="form-group">
-    <label asp-for="etudiants.Moyenne">Moyenne</label>
-    <input class="form-control" asp-for="etudiants.Moyenne"/>
-    <span asp-validation-for="etudiants.Moyenne"></span>
+        <label asp-for="etudiants.Moyenne">Moyenne</label>
+        <input class="form-control" asp-for="etudiants.Moyenne"/>
+        <span asp-validation-for="etudiants.Moyenne"></span>
     </div>
     <div class="form-group">
-    <label asp-for="etudiants.Programme">Programme</label>
-    <select class="form-control">
-        <option value="" selected>Veuillez faire un choix</option>
-    </select>
-    <span asp-validation-for="etudiants.Programme"></span>
+        <label asp-for="etudiants.Programme">Programme</label>
+        <select class="form-control" asp-for="etudiants.Programme" asp-items="@Model.mySkills">
+            <option value="" selected>Veuillez faire un choix</option>
+        </select>
+        <span asp-validation-for="etudiants.Programme"></span>
     </div>
     <button class="btn btn-primary">Submit</button>
 </form>
